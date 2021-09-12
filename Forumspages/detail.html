@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantumcraft forums</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+		<div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="home.html">Forums</a></li>
+                    <li class="nav-item"><a href="posts.html">Posts</a></li>
+                    <li class="nav-item"><a href="detail.html">Detail</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">Quantum<br>craft<br>Forums</div>
+        </div>
+		<!--Search Box-->
+		<div class="search-box">
+			<div>
+				<select name="" id="">
+					<option value="everything">Everything</option>
+					<option value="titles">Titles</option>
+					<option value="descriptions">Descriptions</option>
+				</select>
+				<input type="text" name="q" id="" placeholder="search...">
+				<button><i class="fa fa-search"></i></button>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+
+        <!--Navigation-->
+        <div class="navigate">
+            <span><a href="#">Quantumcraft - Forums</a> >> <a href="#">Random Forum</a> >>   <a href="#">Random Post</a></span>
+        </div>
+
+        <div class="topic-container">
+            <div class="head">
+                <div class="authors">Author</div>
+                <div class="content">Topic: post's title (Read 1258 Times)</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="username">Username</a></div>
+                    <div>Role</div>
+                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
+                    <div>Posts: <U>45</U></div>
+                    <div>Points:<U>5423</U></div>
+                </div>
+                <div class="content">
+                    Just a random content of a random post.
+                    <br>To see how it looks like.
+                    <br><br>
+                    Nothing else ...
+                    <br><br>
+                    <hr>
+                    Regards Username
+                    <div class="comment">
+                        <button onclick="showComment()">comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Comment input-->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="comment here...."></textarea>
+            <input type="submit" name="" id="" value="submit">
+        </div>
+
+        <!--Show comments-->
+        <div class="comments-container">
+            <div class="head">
+                <div class="authors">Author</div>
+                <div class="content">Comments</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="AnotherUser"><a href="username">Username</a></div>
+                    <div>Role</div>
+                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
+                    <div>Posts: <U>45</U></div>
+                    <div>Points:<U>5423</U></div>
+                </div>
+                <div class="content">
+                    Just a random comment of a random post.
+                    <br>To see how it looks like.
+                    <br><br>
+                    Nothing else ...
+                    <br>
+                    <div class="comment">
+                        <button onclick="showReply()">reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Reply input-->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="comment" id="" placeholder="reply here...."></textarea>
+            <input type="submit" name="" id="" value="submit">
+        </div>
+       
+ 
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+
+
+
+
+ <footer>
+	 <span>&copy; &nbsp;George Skinner | All rights Reserved.</span>
+
+ </footer>
+
+
+	<script src="main.js"></script>
+</body>
+</html>
